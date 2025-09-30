@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://likelymeus.pages.dev</id>
+    <title>likelyme博客</title>
+    <updated>2025-09-30T06:38:14.303Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://likelymeus.pages.dev"/>
+    <link rel="self" href="https://likelymeus.pages.dev/atom.xml"/>
+    <subtitle>专注技能学习的原创博客，每日更新实用工具教程，涵盖新媒体运营、网页技巧等实战内容。从新手入门到高手进阶，用通俗语言拆解复杂问题，助你少走弯路、高效成长，关注即享免费学习资料包！</subtitle>
+    <logo>https://likelymeus.pages.dev/images/avatar.png</logo>
+    <icon>https://likelymeus.pages.dev/favicon.ico</icon>
+    <rights>All rights reserved 2025, likelyme博客</rights>
+    <entry>
+        <title type="html"><![CDATA[一个小测试]]></title>
+        <id>https://likelymeus.pages.dev/post/yi-ge-xiao-ce-shi/</id>
+        <link href="https://likelymeus.pages.dev/post/yi-ge-xiao-ce-shi/">
+        </link>
+        <updated>2025-09-22T02:22:42.000Z</updated>
+        <content type="html"><![CDATA[<p>重今天开始我将开始更新</p>
+]]></content>
+    </entry>
+</feed>

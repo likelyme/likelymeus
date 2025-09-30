@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+<title>
+  标签列表 | likelyme博客
+</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://likelymeus.pages.dev/favicon.ico?v=1759203926895">
+<link rel="stylesheet" href="https://likelymeus.pages.dev/styles/main.css">
+<link rel="stylesheet" href="https://likelymeus.pages.dev/styles/hf.css">
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+
+
+
+            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+            
+
+                <!-- 添加导航栏 -->
+                <header class="header">
+                  <nav class="navigation">
+                    <div class="nav-left">
+                      <div class="logo">
+                        <img src="https://likelymeus.pages.dev/media/images/logo-3.png" alt="Logo" class="logo-img">
+                      </div>
+                      <div class="nav-center">
+                        
+                          <div class="nav-item">
+                            
+                                <a href="/" class="menu gt-a-link">
+                                  首页
+                                </a>
+                                
+                          </div>
+                          
+                          <div class="nav-item">
+                            
+                                <a href="/archives" class="menu gt-a-link">
+                                  归档
+                                </a>
+                                
+                          </div>
+                          
+                          <div class="nav-item">
+                            
+                                <a href="/tags" class="menu gt-a-link">
+                                  标签
+                                </a>
+                                
+                          </div>
+                          
+                          <div class="nav-item">
+                            
+                                <a href="/post/about" class="menu gt-a-link">
+                                  关于
+                                </a>
+                                
+                          </div>
+                          
+                          <div class="nav-item">
+                            
+                                <a href="/about" class="menu gt-a-link">
+                                  关于我们
+                                </a>
+                                
+                          </div>
+                          
+                          <div class="nav-item">
+                            
+                                <a href="/read" class="menu gt-a-link">
+                                  阅读
+                                </a>
+                                
+                          </div>
+                          
+                      </div>
+                    </div>
+                    <div class="nav-right">
+                      <i class="fas fa-search search-icon"></i>
+                    </div>
+                  </nav>
+                </header>
+    <meta name="description" content="专注技能学习的原创博客，每日更新实用工具教程，涵盖新媒体运营、网页技巧等实战内容。从新手入门到高手进阶，用通俗语言拆解复杂问题，助你少走弯路、高效成长，关注即享免费学习资料包！">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+      
+</head>
+
+<body>
+  <div id="app" class="main">
+    <div class="main-content">
+      <div class="content-container" data-aos="fade-up">
+        <h2 class="tag-list-title">标签列表</h2>
+        <div class="tags-container">
+          
+            <a class="tag" href="https://likelymeus.pages.dev/tag/0Sxa1z7u0q/">
+              技能提升
+              <span class="tag-count">1</span>
+            </a>
+            
+            
+        </div>
+      </div>
+    </div>
+    <!-- 添加右侧侧边栏 -->
+    <aside class="sidebar-right">
+      <div class="sidebar-content">
+  <div class="top-header-container">
+    <a class="site-title-container" href="https://likelymeus.pages.dev">
+      <img src="https://likelymeus.pages.dev/images/avatar.png?v=1759203926895" class="site-logo">
+      <div class="site-info">
+        <h1 class="site-title">
+          likelyme博客
+        </h1>
+        
+          <p class="site-description">专注技能学习的原创博客，每日更新实用工具教程，涵盖新媒体运营、网页技巧等实战内容。从新手入门到高手进阶，用通俗语言拆解复杂问题，助你少走弯路、高效成长，关注即享免费学习资料包！</p>
+        
+      </div>
+    </a>
+    <div class="menu-btn" @click="menuVisible = !menuVisible">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <!-- 添加导航图标区域 -->
+  <div class="sidebar-section nav-icons-section">
+    <div class="nav-icons">
+      <a href="https://likelymeus.pages.dev/about" class="nav-icon" title="关于我们">
+        <i class="icon-about"></i>
+      </a>
+      <a href="https://likelymeus.pages.dev/archives" class="nav-icon" title="归档">
+        <i class="icon-archive"></i>
+      </a>
+      <a href="https://likelymeus.pages.dev/tags" class="nav-icon" title="标签">
+        <i class="icon-tags"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- 联系我们信息区域 -->
+  <div class="sidebar-section contact-section">
+    <h3 class="sidebar-title">联系我们</h3>
+    <div class="contact-info">
+      
+      
+      
+    </div>
+  </div>
+</div>
+    </aside>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+</body>
+<!-- 底部广告横幅 -->
+<div class="footer-ad">
+  <div class="footer-ad-text">
+    <h3>获取专属定制服务</h3>
+    <p>专业团队为您量身打造解决方案，提升业务效率</p>
+  </div>
+  <a href="/contact" class="footer-ad-btn">立即咨询</a>
+</div>
+
+<footer class="footer">
+  <!-- 添加页脚 -->
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h4>
+          likelyme博客
+        </h4>
+        <p class="footer-description">这是一个简单的博客网站，分享技术和生活。</p>
+        <div class="footer-social">
+          <!-- 可以添加社交媒体图标 -->
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links">
+          <div class="footer-column">
+            <h5>导航</h5>
+            <ul>
+              <li><a href="/">首页</a></li>
+              <li><a href="/archives">文章</a></li>
+              <li><a href="/tags">标签</a></li>
+              <li><a href="/search">搜索</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>更多</h5>
+            <ul>
+              <li><a href="/about">关于</a></li>
+              <li><a href="/contact">联系</a></li>
+              <li><a href="/links">友链</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>联系方式</h5>
+            <ul>
+              <li>邮箱: example@email.com</li>
+              <li>电话: +86 123 4567 8910</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025
+          likelyme博客. All rights reserved. |
+            <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备xxxxxx号</a> |
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=xxxxxxxx" target="_blank">京公网安备
+              xxxxxxxxxxxx号</a></p>
+      <!-- 可以添加备案信息 -->
+    </div>
+</footer>
+
+
+
+</html>
